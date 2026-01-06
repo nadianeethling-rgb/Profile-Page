@@ -8,7 +8,7 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #2A7B9B;
-    background: linear-gradient(326deg,rgba(42, 123, 155, 1) 0%, rgba(85, 9, 115, 1) 71%, rgba(237, 83, 237, 1) 100%);
+    background: linear-gradient(324deg,rgba(50, 4, 148, 1) 0%, rgba(124, 62, 247, 1) 47%, rgba(50, 4, 148, 1) 100%);
     color: #fff;
     overflow-x: hidden;
 }
@@ -236,55 +236,50 @@ nav{
 }
 
 
-.floating-element:nth-child(1){
+.floating-element:nth-child(2){
     top: -50px;
     left: 10%;
     background-image: url('https://img.icons8.com/color/48/000000/visual-studio-code-2019.png');
-    animation: wave1 4s ease-in-out infinite 0s;
+    animation: wave2 4s ease-in-out infinite 0s;
 }
 
-.floating-element:nth-child(2){
+.floating-element:nth-child(3){
     top: -50px;
-    left: 30%;
+    left: 32%;
     background-image: url('https://img.icons8.com/material-outlined/48/000000/github.png');
-    animation: wave2 4s ease-in-out infinite 0.5s;
-}
-
-.floating-element:nth-child(3){ 
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url('https://img.icons8.com/color/48/000000/javascript.png');
-    animation: wave3 4s ease-in-out infinite 1s;
+    animation: wave3 4s ease-in-out infinite 0.5s;
 }
 
 .floating-element:nth-child(4){ 
     top: -50px;
-    left: 70%;
-    background-image: url('https://img.icons8.com/color/48/000000/nodejs.png');
-    animation: wave4 4s ease-in-out infinite 1.5s;
+    left: 43%;
+    transform: translateX(-50%);
+    background-image: url('https://img.icons8.com/color/48/000000/javascript.png');
+    animation: wave4 4s ease-in-out infinite 1s;
 }
 
 .floating-element:nth-child(5){ 
     top: -50px;
-    left: 90%;
-    background-image: url('https://img.icons8.com/color/48/000000/react-native.png');
-    animation: wave5 4s ease-in-out infinite 2s;
+    left: 60%;
+    background-image: url('https://img.icons8.com/color/48/000000/nodejs.png');
+    animation: wave5 4s ease-in-out infinite 1.5s;
 }
 
-@keyframes wave1 {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-30px); }
+.floating-element:nth-child(6){ 
+    top: -50px;
+    left: 78%;
+    background-image: url('https://img.icons8.com/color/48/000000/react-native.png');
+    animation: wave6 4s ease-in-out infinite 2s;
 }
 
 @keyframes wave2 {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(-30px); }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
 }
 
 @keyframes wave3 {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-30px); }
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-30px); }
 }
 
 @keyframes wave4 {
@@ -293,6 +288,11 @@ nav{
 }
 
 @keyframes wave5 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+}
+
+@keyframes wave6 {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-30px); }
 }
@@ -426,13 +426,14 @@ nav{
     color: #b8b8b8;
     line-height: 1.7;
     margin-bottom: 20px;
+    max-width: 500px;
 }
 
 .project-tags{
     display: flex;
     flex-wrap: wrap;
-
     gap: 10px;
+    max-width: 500px;
 }
 
 .tag{
@@ -446,7 +447,6 @@ nav{
 
 .contact-section{
     padding: 100px 80px;
-    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .contact-section h2 {
@@ -499,6 +499,7 @@ nav{
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(199, 125, 255, 0.4);
 }
+
 .back-to-top {
     position: fixed;
     bottom: 20px;
